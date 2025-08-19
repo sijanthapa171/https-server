@@ -6,12 +6,12 @@
 
 ### Build
 ```bash
-make -C /home/sijan/https
+make 
 ```
 
 ### Generate a self-signed certificate (dev only)
 ```bash
-cd /home/sijan/https
+cd https-server
 openssl req -x509 -newkey rsa:2048 -nodes -keyout key.pem -out cert.pem -subj "/CN=localhost" -days 365
 ```
 
